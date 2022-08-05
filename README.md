@@ -27,3 +27,9 @@ git commit -m "Mensaje"
 ```
 git push
 ```
+
+5 - Traer cambios
+
+```
+git pull
+```
