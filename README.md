@@ -1,5 +1,7 @@
 # Bootcamp prueba Javascript
 
+Esto es muy parecido a...
+
 # Comandos básicos de GIT
 
 1 - Ver los archivos cambiados
