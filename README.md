@@ -1,7 +1,5 @@
 # Bootcamp prueba Javascript
 
-Esto es muy parecido a la magia
-
 # Comandos básicos de GIT
 
 1 - Ver los archivos cambiados
@@ -33,3 +31,5 @@ git push
 ```
 git pull
 ```
+
+Probando git en VS code
