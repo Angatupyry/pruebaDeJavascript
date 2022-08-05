@@ -4,8 +4,6 @@ Esto es muy parecido a...
 
 # Comandos básicos de GIT
 
-Estos cambios son de César
-
 1 - Ver los archivos cambiados
 
 ```
