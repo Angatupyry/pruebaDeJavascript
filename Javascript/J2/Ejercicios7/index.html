@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Realizar un programa que permita cargar dos listas de 3 valores cada una. 
+        const CANTIDAD_ELEMENTOS = 6;
+        const FIN_LISTA_UNO = 2
+
+        /*
+            Dos listas de tres valores cada una
+            Lista 1 = [valor 1, valor 2, valor 3]
+            Lista 2 = [valor 1, valor 2, valor 3]
+
+            Al sumar el valor de los elementos, comprobar qué lista es mayor. 
+        */
+
+        /*
+            1 Hacer un loop del total de los elementos requeridos al usuario. 
+                1.1 Cargar desde el índice 0 hasta el 2, la lista 1
+                1.2 Cargar desde el 3 hasta el 5 la lista 2
+
+            2 Hacer dos for con tres iteraciones. 
+        */
+        const listaUno = [];
+        const listDos = [];
+        let acumuladoListaUno = 0;
+        let acumuladoListaDos = 0;
+
+        for(let i = 0; i< CANTIDAD_ELEMENTOS; i++) {
+            const elemento = parseInt(prompt("Ingrese elemento para la Lista Uno"));     
+            listaUno.push(elemento);
+            acumuladoListaUno += elemento;
+        }
+
+
+        for(let i = 0; i< CANTIDAD_ELEMENTOS; i++) {
+            const elemento = parseInt(prompt("Ingrese elemento para la Lista Dos"));     
+            listDos.push(elemento);
+            acumuladoListaDos += elemento;
+        }
+        
+
+
+        console.log(`Acumulado lista uno: ${acumuladoListaUno}`)
+        console.log(`Acumulado lista dos: ${acumuladoListaDos}`)
+
+        if(acumuladoListaUno > acumuladoListaDos) { 
+            console.log('El acumulado de los elementos de la lista uno es mayor')
+        } else { 
+            console.log('El acumulado de los elementos de la lista dos es mayor')
+        }
+
+
+
+    
+    
+    </script>
+</body>
+</html>
