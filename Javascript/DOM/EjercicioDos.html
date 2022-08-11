@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Dos</title>
+    <style type="text/css">
+        body {font-family: arial, helvetica;}
+    </style>    
+</head>
+<script>
+    
+   
+    function limita(maximoCaracteres) {
+        const textTarea = document.getElementById("texto");
+
+        if(textTarea.value.length >= maximoCaracteres) {
+            return false;
+        } 
+        
+        return true;
+    }
+
+
+    function actualizarDivInfo(maximoCaracteres) {
+        const textTarea = document.getElementById("texto");
+        const info = document.getElementById("info");
+
+        if(textTarea.value.length >= maximoCaracteres) {
+            info.textContent = `Máximo ${maximoCaracteres} caracteres`
+        } else {
+            const diff = maximoCaracteres - textTarea.value.length;
+            info.textContent = `Puede seguir escribiendo ${diff} caracteres`
+        }
+
+    }
+
+
+    // const algo = () =>{
+    //     const input = document.getElementById("input");
+    //     console.log(input.value)
+    // }
+
+
+    // function limit(element)
+    // {
+    //     const max_chars = 2;
+
+    //     if(element.value.length > max_chars) {
+    //         element.value = element.value.substr(0, max_chars);
+    //     }
+    // }
+    
+</script>
+<body>
+    <div id="info">Máximo 100 caracteres</div>
+    <!-- <input type="text" id="input" onkeydown="limit(this);" onchange="algo()" onkeypress="algo()"> -->
+    <textarea id="texto" onkeyup="actualizarDivInfo(30)" onkeypress="return limita(30);" rows="6" cols="30"></textarea>
+</body>
+</html>
