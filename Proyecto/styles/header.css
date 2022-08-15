@@ -1,0 +1,11 @@
+header {
+    color: white;
+}
+
+div {
+    border: 1px solid black;
+}
+
+.header-nav__ul {
+    background-color: green;
+}
